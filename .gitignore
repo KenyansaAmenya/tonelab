@@ -6,8 +6,7 @@ dist/
 dist-ssr/
 *.local
 
-# --- Environment variables (never commit real values) ---
-.env
+# 
 .env.*
 !.env.example
 
