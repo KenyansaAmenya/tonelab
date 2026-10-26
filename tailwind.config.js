@@ -1,0 +1,75 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+    darkMode: 'class',
+    content: ['./index.html', './src/**/*.{js,jsx}'],
+    theme: {
+        extend: {
+            colors: {
+                primary: 'rgb(var(--c-primary) / <alpha-value>)',
+                'primary-container': 'rgb(var(--c-primary-container) / <alpha-value>)',
+                'primary-fixed': 'rgb(var(--c-primary-fixed) / <alpha-value>)',
+                'on-primary-fixed': 'rgb(var(--c-on-primary-fixed) / <alpha-value>)',
+                secondary: 'rgb(var(--c-secondary) / <alpha-value>)',
+                'secondary-container': 'rgb(var(--c-secondary-container) / <alpha-value>)',
+                'secondary-fixed': 'rgb(var(--c-secondary-fixed) / <alpha-value>)',
+                'on-secondary-fixed': 'rgb(var(--c-on-secondary-fixed) / <alpha-value>)',
+                tertiary: 'rgb(var(--c-tertiary) / <alpha-value>)',
+                'tertiary-container': 'rgb(var(--c-tertiary-container) / <alpha-value>)',
+                'tertiary-fixed': 'rgb(var(--c-tertiary-fixed) / <alpha-value>)',
+                'on-tertiary-fixed': 'rgb(var(--c-on-tertiary-fixed) / <alpha-value>)',
+                surface: 'rgb(var(--c-surface) / <alpha-value>)',
+                'surface-container': 'rgb(var(--c-surface-container) / <alpha-value>)',
+                'surface-container-low': 'rgb(var(--c-surface-container-low) / <alpha-value>)',
+                'surface-container-high': 'rgb(var(--c-surface-container-high) / <alpha-value>)',
+                'surface-container-highest': 'rgb(var(--c-surface-container-highest) / <alpha-value>)',
+                'surface-container-lowest': 'rgb(var(--c-surface-container-lowest) / <alpha-value>)',
+                'on-surface': 'rgb(var(--c-on-surface) / <alpha-value>)',
+                'on-surface-variant': 'rgb(var(--c-on-surface-variant) / <alpha-value>)',
+                outline: 'rgb(var(--c-outline) / <alpha-value>)',
+                'outline-variant': 'rgb(var(--c-outline-variant) / <alpha-value>)',
+                error: 'rgb(var(--c-error) / <alpha-value>)',
+                'error-container': 'rgb(var(--c-error-container) / <alpha-value>)',
+                'on-error-container': 'rgb(var(--c-on-error-container) / <alpha-value>)',
+                'inverse-surface': 'rgb(var(--c-inverse-surface) / <alpha-value>)',
+                'inverse-on-surface': 'rgb(var(--c-inverse-on-surface) / <alpha-value>)',
+                background: 'rgb(var(--c-background) / <alpha-value>)',
+            },
+            fontFamily: {
+                sans: ['"Plus Jakarta Sans"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+                mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
+            },
+            keyframes: {
+                'joyful-bounce': {
+                    '0%, 100%': { transform: 'translateY(0) rotate(0deg) scale(1)' },
+                    '30%': { transform: 'translateY(-10px) rotate(-3deg) scale(1.05)' },
+                    '60%': { transform: 'translateY(-4px) rotate(4deg) scale(1.02)' },
+                },
+                'pulse-ring': {
+                    '0%': { transform: 'scale(0.92)', opacity: '0.8' },
+                    '50%': { transform: 'scale(1.15)', opacity: '0' },
+                    '100%': { transform: 'scale(0.92)', opacity: '0' },
+                },
+                'gentle-nod': {
+                    '0%, 100%': { transform: 'rotate(0deg)' },
+                    '50%': { transform: 'rotate(7deg) translateY(-2px)' },
+                },
+                'gentle-breath': {
+                    '0%, 100%': { transform: 'scale(1)', opacity: '0.85' },
+                    '50%': { transform: 'scale(1.1)', opacity: '1' },
+                },
+                'gentle-tilt': {
+                    '0%, 100%': { transform: 'rotate(-5deg)' },
+                    '50%': { transform: 'rotate(5deg)' },
+                },
+            },
+            animation: {
+                'joyful-bounce': 'joyful-bounce 2.6s ease-in-out infinite',
+                'pulse-ring': 'pulse-ring 2.4s cubic-bezier(0.24, 0, 0.38, 1) infinite',
+                'gentle-nod': 'gentle-nod 3.2s ease-in-out infinite',
+                'gentle-breath': 'gentle-breath 4s ease-in-out infinite',
+                'gentle-tilt': 'gentle-tilt 3.6s ease-in-out infinite',
+            },
+        },
+    },
+    plugins: [],
+}
